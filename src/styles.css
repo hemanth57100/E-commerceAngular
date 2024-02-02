@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Arial", sans-serif;
+  background: url('https://drive.google.com/uc?export=view&id=10RygFFapmvZKjf7eea4Z8ZFaQBuv3iUO') no-repeat center center fixed;
+  background-size: cover;
+  color: #2c2a2a; 
+}

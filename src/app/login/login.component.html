@@ -1,0 +1,28 @@
+<!-- login.component.html -->
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Username" [(ngModel)]="username" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="password" />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="button" (click)="onSubmit()">Login</button>
+    </form>
+
+    <div class="additional-info">
+      <span>Don't have an account? <a routerLink="/register">Register</a></span>
+    </div>
+  </mat-card-content>
+</mat-card>

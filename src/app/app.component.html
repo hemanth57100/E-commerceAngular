@@ -1,0 +1,61 @@
+<div class="body">
+  <h1 class="text-center interesting-heading"><b>E-Commerce Platform</b></h1>
+  <mat-toolbar color="primary">
+    <div class="left-content">
+      <span>E-commerce Application</span>
+    </div>
+    <div class="right-content">
+      <span class="space-buttons"></span>
+      <a routerLink="/login" class="router-link">
+        <button mat-raised-button>
+          Login
+        </button>
+      </a>
+      <button mat-raised-button color="warn" (click)="logout()">
+        Logout
+      </button>
+    </div>
+  </mat-toolbar>
+  <nav class="router-links">
+    <!-- Home -->
+    <a routerLink="/home" class="router-link" [ngClass]="{'active': isHomePage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="Home" [ngClass]="{'active-icon': isHomePage}">home</mat-icon>
+      </div>
+      <span class="formatted-text" [ngClass]="{'active-text': isHomePage}">Home</span>
+    </a>
+    <a routerLink="/about-us" class="e" [ngClass]="{'active': isAboutUsPage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="info">info</mat-icon>
+      </div>
+      <span class="formatted-text">About Us</span>
+    </a>
+    
+    <a routerLink="/shopping-cart" class="a" [ngClass]="{'active': isShoppingCartPage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="shopping-cart">shopping-cart</mat-icon>
+      </div>
+      <span class="formatted-text">Shopping-Cart</span>
+    </a>
+    <a routerLink="/search" class="b" [ngClass]="{'active': isSearchPage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="search">search</mat-icon>
+      </div>
+      <span class="formatted-text">Search</span>
+    </a>
+    <a routerLink="/my-order" class="c" [ngClass]="{'active': isMyOrderPage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="my-order">download</mat-icon>
+      </div>
+      <span class="formatted-text">My-Order</span>
+    </a>
+    <a routerLink="/filter" class="d" [ngClass]="{'active': isFilterPage}">
+      <div class="icon-container">
+        <mat-icon class="custom-icon" aria-hidden="false" aria-label="filter">filter</mat-icon>
+      </div>
+      <span class="formatted-text">Filter</span>
+    </a>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

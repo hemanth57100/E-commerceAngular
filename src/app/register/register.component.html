@@ -1,0 +1,65 @@
+<mat-card class="register-card">
+  <mat-card-header>
+    <mat-card-title>Register</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form class="horizontal-form" #registerForm="ngForm" (ngSubmit)="registerNewUser()">
+      <div class="form-row">
+        <mat-form-field class="half-width">
+          <label>First Name</label>
+          <input matInput placeholder="First Name" [(ngModel)]="user.firstName" required name="firstName">
+        </mat-form-field>
+
+        <mat-form-field class="half-width">
+          <label>Last Name</label>
+          <input matInput placeholder="Last Name" [(ngModel)]="user.lastName" required name="lastName">
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field class="half-width">
+          <label>Username</label>
+          <input matInput placeholder="Username" [(ngModel)]="user.username" required name="username">
+        </mat-form-field>
+        <div class="form-row">
+          <mat-form-field class="half-width">
+            <label>Password</label>
+            <input matInput type="password" placeholder="Password" [(ngModel)]="user.password" required name="password">
+          </mat-form-field>
+        </div>
+  
+
+        <mat-form-field class="half-width">
+          <label>Email</label>
+          <input matInput type="email" placeholder="Email" [(ngModel)]="user.email" required name="email">
+        </mat-form-field>
+      </div>
+
+      <!-- Include the gender radio buttons here -->
+      <div class="gender-radio">
+        <label>
+          <input type="radio" name="gender" [(ngModel)]="user.gender" value="Male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" [(ngModel)]="user.gender" value="Female"> Female
+        </label>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field class="half-width">
+          <label>Phone Number</label>
+          <input matInput type="tel" placeholder="Phone Number" [(ngModel)]="user.phoneNumber" required name="phoneNumber">
+        </mat-form-field>
+      </div>
+
+      <!-- Include other form fields as needed -->
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!registerForm.form.valid">Register</button>
+    </form>
+
+    <div class="additional-info">
+      <span>Already have an account? <a routerLink="/login">Login</a></span>
+    </div>
+  </mat-card-content>
+</mat-card>

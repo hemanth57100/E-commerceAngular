@@ -1,0 +1,119 @@
+.active .custom-icon,
+.active .formatted-text {
+  color:rgb(255, 52, 52);
+}
+
+.a.active .custom-icon,
+.a.active .formatted-text,
+.b.active .custom-icon,
+.b.active .formatted-text,
+.c.active .custom-icon,
+.c.active .formatted-text,
+.d.active .custom-icon,
+.d.active .formatted-text
+.e.active .custom-icon,
+.e.active .formatted-text {
+  color:rgb(255, 52, 52); 
+}
+
+.router-links {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto; /* Add this line to shift all icons to the right */
+}
+
+.a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
+  margin: 0 10px;
+}
+.b, .c, .d, .e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
+  margin: 0; /* No margin between the icons */
+}
+
+
+.e {
+  margin-right: 10px;
+}
+
+.router-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
+  margin: 10px;
+}
+
+.icon-container {
+  margin-bottom: 1px;
+}
+
+.formatted-text {
+  text-transform: uppercase;
+  color: blue;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.interesting-heading {
+  color: black;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(49, 45, 45, 0.5);
+  margin-top: 20px;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.mat-toolbar {
+  color: rgb(250, 250, 245);
+  font-family: 'Georgia', sans-serif;
+}
+
+.left-content span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.right-content button {
+  margin-left: 10px;
+}
+
+.right-content button:hover {
+  background-color: rgb(243, 130, 130);
+}
+
+.footer-section {
+  background-color: rgb(228, 213, 213);
+  color: rgba(109, 101, 101, 0);
+  padding: 5px;
+  margin-top: 30px;
+}

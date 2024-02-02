@@ -1,0 +1,61 @@
+/* register.component.css */
+
+.register-card {
+  width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 45%; /* Adjusted width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.gender-radio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.gender-radio label {
+  margin-right: 20px;
+}
+
+button {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.additional-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Add more styling as needed */
+
+/* Media query for responsiveness */
+@media (max-width: 1000px) {
+  .register-card {
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjusted width */
+  }
+
+  .form-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
